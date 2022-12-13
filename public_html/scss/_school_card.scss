@@ -1,0 +1,119 @@
+
+
+
+.course-card-doctor{
+    background-color: $dopback_color2;
+    .index-doctor-btn{
+        margin-top:0;
+    }
+}
+
+.course-card-video{
+    padding-bottom:55px;
+    .index-doctor-btn{
+        margin: auto;
+        margin-top: 35px;
+    }
+    .videoPlayer{
+        height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    .video{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    }
+}
+.course-card-sert{
+    background-color: white;
+    .slick-list{
+       
+    }
+    .index-doctor-flex{
+flex-direction:column;
+    }
+    .index-doctor-left{
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .index-doctor-right{
+        box-shadow: 0px 4px 10px rgba(0, 104, 48, 0.2);
+        margin-top:0 !important;
+        .index-doctor-img{
+            max-height: unset;
+            min-height:unset;
+            margin-bottom: 0;
+            &::after{
+                content:none;
+            }
+            img{
+                max-height: unset;
+                min-height:unset;
+                border-radius: unset;
+            }
+        }
+    }
+}
+.course-card-program{
+    padding-top: 60px;
+    .index-grow-bottom .index-grow-list-ul .index-grow-list-ul-li{
+        position:relative;
+        flex-direction:column;
+        align-items:flex-start;
+        padding-left: 80px;
+        margin-top: 0px !important;
+        padding-top:15px;
+        padding-bottom:15px;
+        &::before{
+content:"";
+position:absolute;
+width: 40px;
+left: 0px;
+height: 40px;
+border-radius: 100%;
+border: 10px solid $item_color2;
+background: white;
+z-index: 100;
+        }
+        &::after{
+            content:"";
+position:absolute;
+            width: 10px;
+    left: 15px;
+    height: 100%;
+    border-radius: unset;
+    border: none;
+    background: $item_color2;
+                    }
+                    &:last-child{
+                        &::after{
+                            content:none;
+                                    }
+                    }
+    }
+    .index-grow-list-ul-li-span{
+        color: $icon_color2;
+        font-weight: bold;
+        font-size: 25px;
+    }
+}
+@media (min-width:768px){
+    .course-card-sert{
+        .index-doctor-flex{
+            flex-direction:row;
+                }
+        .index-doctor-left{
+            padding-right:40px;
+        }
+    }
+}
+@media (min-width:992px){
+    .course-card-program{
+        .index-grow-list-ul-li-span{
+            font-size: 32px;
+        }
+    }
+}

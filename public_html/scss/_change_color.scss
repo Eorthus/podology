@@ -1,0 +1,137 @@
+
+
+.change-color{
+
+    .pod-btn{
+            background: linear-gradient(180deg, $btn_color2 0%,$icon_color2 100%);
+          //  box-shadow: 0px 4px 10px rgba(0, 104, 48, 0.2);
+          box-shadow: 0px 4px 10px #006830;
+          &:hover{
+            background: $icon_color2;
+            color:white;
+        }
+        }
+
+
+        .header-menu .navbar {
+            background: linear-gradient(180deg, $btn_color2 0%,$icon_color2 100%);
+        }
+        @media (min-width: 992px){
+.header-menu .navbar {
+    background:transparent;
+}
+.header-menu .navbar .d-flex .navbar-messangers .navbar-messangers-div{
+    color: $icon-color2;
+}
+        }
+        .header-menu .navbar::before {
+            background-color: $icon_color2;
+        }
+        .header-menu-btn{
+            box-shadow: none;
+        }
+        .header-menu .navbar .d-flex .navbar-messangers .navbar-messangers-div{
+            background: $icon_color2;
+        }
+        .header-menu .navbar:hover {
+            background: $icon_color2 !important;
+        }
+        @media (min-width:992px){
+            .header-menu .navbar:hover {
+                background: transparent !important;
+            }
+        }
+        .header-menu .navbar .offcanvas-body .nav-link:focus, .header-menu .navbar .offcanvas-body .nav-link:hover{
+            color: $icon_color2;
+        }
+
+
+        .header-container{
+            background-color:$dopback-color2;
+        }
+        .header-slider .header-slider-slide-info .header-slider-slide-info-h-color{
+            color:$icon_color2;
+        }
+        .ill_card-banner .header-slider-slide-info-price{
+            color:$btn-color2;
+        }
+        .header-container:after {
+            background-image: linear-gradient(225deg, #ffffff00 92%, $btn_color2 10%, $btn_color2 100%);
+        }
+        .index-doctor .index-doctor-title{
+            color: $icon_color2;
+        }
+        .course-card-video{
+            background:$dopback_color2;
+        }
+        .index-h{
+            color:$icon_color2;
+        }
+        .contacts-feedback .contacts-feedback-contacts-phone{
+            color:$icon_color2;
+        }
+        .contacts-feedback .contacts-feedback-form .contacts-address .contacts-feedback-contacts-phone{
+            color:$icon_color2;
+        }
+        .index-doctor .index-doctor-img::after {
+            background-image: linear-gradient(225deg, #ffffff00 90%, $btn_color2 0%, $btn_color2 80%);
+        }
+        .index-doctor .index-doctor-list .index-doctor-list-li::before {
+            content: url(../img/quadro2.png);
+        }
+        .index-prices-gallery li::after {
+             background-image: linear-gradient(45deg, #ffffff00 90%, $btn_color2 0%, $btn_color2 80%);
+        }
+        .index-prices-gallery-price .index-prices-gallery-price-p:nth-child(2){
+            color:$icon_color2; 
+        }
+        .index-benefits{
+            background-color:$icon_color2;
+            .index-h{
+                color:white;
+            }
+        }
+        .index-map{
+            background-color: $dopback_color2;
+        }
+        .index-map .contacts-main-content-item-p{
+            color:$icon_color2;
+        }
+        .contacts-main-content-item .contacts-main-content-item-span:hover{
+            color:$icon_color2;
+        }
+        .slick-dots li.slick-active button:before{
+            color: $item_color2;
+        }
+        .school-otzyvi .slick-arrow{
+            background: linear-gradient(180deg, $btn_color2 0%, $icon_color2 100%);
+        }
+        .doctors-staff-card .doctors-staff-card-img::after{
+            background-image: linear-gradient(225deg, #ffffff00 90%, $btn_color2 0%, $btn_color2 80%);
+        }
+        .slick-arrow:hover{
+            background:$icon_color2;
+        }
+        .index-prices-gallery li a::after{
+            background-image: linear-gradient(45deg, #ffffff00 90%, $btn_color2 0%, $btn_color2 80%);
+        }
+        .modal-dialog .modal-content{
+            background: #f6f9fb;
+        }
+.footer-bottom .footer-laws {
+    border-top: 1px solid $icon_color2;
+}
+.footer-sertificate{
+    border-top: 1px solid $icon_color2;
+}
+.footer-bottom .footer-menu a:hover, 
+.footer-bottom .footer-contacts .footer-contacts-phone:hover,
+ .header-menu .header-menu-contacts .header-menu-contacts-phone:hover,
+ .header-menu .header-menu-contacts .header-menu-contacts-address:hover,
+ .header-menu-logo-title,
+ .header-menu .header-menu-logo .header-menu-logo-title,
+ .footer-bottom .footer-emails .footer-emails-manager .footer-emails-manager-email:hover {
+
+    color: $icon_color2;
+}
+}

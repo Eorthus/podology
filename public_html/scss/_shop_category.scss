@@ -1,0 +1,125 @@
+.category-list{
+    padding-top: 45px;
+    background: white;
+    padding-bottom: 30px;
+    .doctors-staff-card-info{
+        min-height:unset !important;
+        position:relative;
+    }
+    .doctors-staff-card {
+        padding-bottom: 30px;
+        position: relative;
+        &:hover .category-cart-add{
+            display:block;
+            transform: scale(0.965);
+        }
+    }
+}
+.category-nav{
+    ul{
+        justify-content: center;
+        .page-item:first-child .page-link{
+            background: linear-gradient(180deg, $btn_color2 0%, $icon_color2 100%);
+            color: white;
+            border-radius: 30px 0px 0px 30px;
+            &:hover{
+                background: $icon_color2;
+            }
+        }
+        .page-item:last-child .page-link{
+            background: linear-gradient(180deg, $btn_color2 0%, $icon_color2 100%);
+            color: white;
+            border-radius: 0px 30px 30px 0px;
+            &:hover{
+                background: $icon_color2;
+            }
+        }
+        .page-link{
+background:$dopback_color2;
+color:$font_color;
+border:none;
+        }
+        .page-item.active .page-link{
+            box-shadow: 0px 4px 10px rgba(0, 104, 48, 0.2);
+            background-color: $icon_color2;
+            border:none;
+            color: white;
+        }
+        .page-link:hover, .page-link:focus{
+color: $font_color;
+background-color: $item_color2;
+border:none;
+        }
+    }
+}
+.category-orders{
+    padding-top: 45px;
+}
+.nonactive-card-info{
+    display:none;
+}
+.nonactive-card{
+
+    position: relative;
+    .category-cart-add{
+        display:none !important;
+    }
+    .view-main-btn{
+        display: none !important;
+    }
+    .view-main-count{
+        display: none !important;
+    }
+    .view-main-left{
+        opacity:0.5;
+            }
+            .view-main-right{
+                opacity:0.5;
+                    }
+    .nonactive-card-info{
+        position:absolute;
+        display:block;
+        left:50%;
+        top:20%;
+        transform:translate(-50%,-20%);
+        z-index:1;
+        color:$btn_color2;
+        text-transform: uppercase;
+    text-align: center;
+    }
+    .doctors-staff-card-container{
+        opacity: 0.5;
+    }
+
+}
+.category-cart-add{
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    left: 0px;
+    bottom: -70px;
+    background: #f6f9fb;
+    z-index: 100;
+    box-shadow: 0px 10px 10px rgba(0, 104, 48, 0.2);
+    border-radius: 0px 0px 30px 30px;
+    display:none;
+ transition: 0.5s;
+ transform: scale(0.8);
+ .category-cart-add-count{
+    display:block;
+    text-align:center;
+    margin-top: 10px;
+ }
+}
+@media (min-width:768px){
+    .category-nav{
+        ul{
+            justify-content: flex-end;
+        }
+    }
+}
+@media (min-width:992px){
+.category-back{
+    display:none;
+}
+}

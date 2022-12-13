@@ -1,0 +1,233 @@
+.view-back{
+    color: $icon_color2;;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    background:$dopback_color2;
+    span{
+        margin-left: 10px;
+        transition: 0.5s;
+    }
+    &:hover span{
+        text-decoration: underline;
+        color:$icon_color2;
+    }
+}
+.view-main{
+    display: flex;
+    flex-direction: row;
+    padding-top: 45px;
+    padding-bottom:60px;
+    .slider-for{
+        margin-bottom: 5px;
+        .slick-list{
+            border-radius: 30px;
+        }
+    }
+    .slider-nav{
+        .slick-list{
+            padding:0 !important;
+            margin:auto;
+            img{
+                padding: 5px;
+    border-radius: 15px;
+            }
+        }
+        .slick-dots{
+            display:none;
+        }
+    }
+    .view-main-right{
+        display: flex;
+    flex-direction: column;
+    position: relative;
+    .view-main-present{
+        position: absolute;
+    width: 50px;
+    right: 10px;
+    transform: rotate(25deg);
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.1);
+    }
+    }
+    .view-main-articul{
+        color:$subfont_color;
+    }
+    .view-main-about{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .view-main-price{
+        display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: $icon_color2;
+  &:after {
+        content: "\0020BD";
+        margin-left: 4px;
+        font-size: 40px;
+    }
+    }
+    .view-main-count{
+        margin-bottom: 20px;
+        .cart-main-info-orders-count{
+            justify-content: flex-start;
+        }
+        input{
+            width: 50px;
+            text-align: center;
+            background:$dopback_color2;
+        }
+    }
+    .view-main-btn{
+        max-width: unset;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    }
+    .view-main-transport{
+        color:$icon_color2;
+        text-transform: uppercase;
+    }
+    .slick-track{
+        img{
+            cursor:pointer;
+        }
+        img:hover{
+
+        }
+    }
+}
+.view-about{
+    background-color: $dopback_color2;
+    padding-top:30px;
+    .view-status{
+        font-weight:bold;
+    }
+    .index-doctor-list{
+        margin-left:auto;
+    }
+}
+.view-pay{
+ //   background-color: $dopback_color2 !important;
+    .index-h{
+      //  color: $icon_color2 !important;
+    }
+    ul{
+        li{
+      //      color:$font_color !important;
+            align-items: center;
+            padding-right:20px;
+           
+            &:hover img{
+                transform: scale(1.2);
+            }
+            .index-benefits-list-ul-li-img{
+                margin-right: 25px;
+                width: 70px !important;
+                background: white;
+                height: 70px;
+                border-radius: 100%;
+                img{
+                    transition:0.5s;
+                }
+            }
+            &:nth-child(3){
+                img{
+                    border-radius:100%;
+                }
+            }
+            &:nth-child(4){
+                img{
+                   padding-top:15px;
+                }
+            }
+        }
+    }
+}
+.view-about-present{
+    display: flex;
+    align-items: center;
+
+    &:hover img{
+transform:scale(1.1);
+
+    }
+    &:hover .view-gift{
+        text-decoration:underline;
+        }
+    img{
+        max-width: 50px;
+    max-height: 50px;
+    width: 100%;
+    margin-right: 20px;
+    transition:0.5s;
+    }
+    .view-about-present-title{
+        font-weight: bold;
+    text-transform: uppercase;
+    .view-gift{
+        color:$icon-color2;
+        transition:0.5s;
+    }
+    }
+
+}
+.view-transport{
+    background-color:$dopback_color2;
+    .view-transport-ul{
+        list-style-type: none;
+        li{
+            max-height: 120px;
+            padding-bottom: 20px;
+            img{
+                width: 100%;
+                height: 100%;
+                margin-bottom: 20px;
+                object-fit: contain;
+                border-radius: 30px;
+                box-shadow: rgba(0, 104, 48, 0.2) 0px 4px 10px;
+                padding: 15px;
+                background: white;
+                transition:0.5s;
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+@media (min-width:576px){
+    .view-transport .view-transport-ul li {
+        padding-right: 20px;
+    }
+}
+@media (min-width:768px){
+    .view-main{
+        .view-main-right{
+            padding-left:30px;
+            .view-main-btn{
+                max-width:317px;
+            }
+        }
+    }
+    .view-pay{
+        ul{
+            li{
+                .index-benefits-list-ul-li-img{
+                    margin-right:0px !important;
+                }
+            }
+        }
+    }
+}
+@media (min-width:1200px){
+    .view-main{
+        .view-main-right{
+            padding-left:50px;
+
+        }
+    }
+}
